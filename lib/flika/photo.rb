@@ -26,8 +26,8 @@ module Flika
     end
     alias to_hash attrs
 
-    def url(size='m')
-      "http://farm#{farm}.staticflickr.com/#{server}/#{id}_#{secret}_#{size}.jpg"
+    def url(size='')
+      "http://farm#{farm}.staticflickr.com/#{server}/#{id}_#{secret}#{size}.jpg"
     end
   end
 end
